@@ -1,3 +1,4 @@
+import 'package:busca_cep/controller/viaCEPController.dart';
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
@@ -7,10 +8,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  TextEditingController _textEditingController = TextEditingController();
+  viaCEPAPI api = viaCEPAPI();
+  _findCep(String cep){
+    return api.recuperarCEP(cep);
+  }
+  TextEditingController _cepController = TextEditingController();
   var maskcep = new MaskTextInputFormatter(
       mask: "#####-###", filter: {"#": RegExp(r'[0-9]')});
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,14 +51,18 @@ class _HomeState extends State<Home> {
               onSubmitted: (String Texto) {
                 print("Valor digitado: " + Texto);
               },
-              controller: _textEditingController,
+              controller: _cepController,
               cursorColor: Colors.blue,
             ),
             SizedBox(
               height: 25,
             ),
             RaisedButton(
-              onPressed: () {},
+              onPressed: _cepController.text == "" ? null : (){
+                setState(() {
+                  _findCep(_cepController.text);
+                });
+              },
               color: Colors.blue,
               textColor: Colors.white,
               padding: EdgeInsets.symmetric(vertical: 12),
