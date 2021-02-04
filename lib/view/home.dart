@@ -52,7 +52,13 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 25,
             ),
-            RaisedButton(onPressed: (){}),
+            RaisedButton(
+              onPressed: () {},
+              color: Colors.blue,
+              textColor: Colors.white,
+              padding: EdgeInsets.symmetric(vertical: 12),
+              child: Text("BUSCAR"),
+            ),
             SizedBox(
               height: 25,
             ),
