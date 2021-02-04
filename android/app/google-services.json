@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688150679053",
+    "project_id": "viacep-326fb",
+    "storage_bucket": "viacep-326fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688150679053:android:d5e9c120ec01883d594f44",
+        "android_client_info": {
+          "package_name": "br.com.example.busca_cep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688150679053-5ilh3k6f3tvqsvhkbc5lrs34bdufllel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBblX-dXWNQi2LJPbz8skAA72kErqgI0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688150679053-5ilh3k6f3tvqsvhkbc5lrs34bdufllel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
