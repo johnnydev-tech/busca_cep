@@ -16,7 +16,8 @@ Projeto desenvolvido em **Flutter**, utilizando:
 ## Demonstração
 
 ### Home
-![](images/home.png)
+<img src="images/home.png" width="100">
+
 ### CEP Inválido
 ![](images/invalid.png)
 ### Busca
