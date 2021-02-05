@@ -16,14 +16,17 @@ Projeto desenvolvido em **Flutter**, utilizando:
 ## Demonstração
 
 ### Home
-<img src="images/home.png" width="100">
+<img src="images/home.png" width="300">
 
 ### CEP Inválido
-![](images/invalid.png)
+<img src="images/invalid.png" width="300">
+
 ### Busca
-![](images/search.png)
+<img src="images/search.png" width="300">
+
 ### Histórico
-![](images/list.png)
+<img src="images/list.png" width="300">
+
 
 ## Copyright E Licença
 
