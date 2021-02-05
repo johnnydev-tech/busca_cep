@@ -1,16 +1,29 @@
-# busca_cep
+# Busca Cep
 
 Um app para fazer rápidas consultas,e verificar seu histórico de buscas
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Desenvolvimento
 
-A few resources to get you started if this is your first Flutter project:
+Projeto desenvolvido em **Flutter**, utilizando:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- ![firebase_core](https://pub.dev/packages/firebase_core)
+- ![cloud_firestore](https://pub.dev/packages/cloud_firestore)
+- ![http](https://pub.dev/packages/http)
+- ![mask_text_input_formatter](https://pub.dev/packages/mask_text_input_formatter)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Demonstração
+
+Home
+![](images/home.png)
+CEP Inválido
+![](images/invalid.png)
+Busca
+![](images/search.png)
+Histórico
+![](images/list.png)
+
+## Copyright E Licença
+
+Copyright 2021 Johnny Freire.
