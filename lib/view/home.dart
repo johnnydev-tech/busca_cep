@@ -73,7 +73,8 @@ class _HomeState extends State<Home> {
               RaisedButton(
                 onPressed: () {
                   setState(() {
-                    _findCep(_cepController.text);
+
+                 //   _findCep(_cepController.text);
                   });
                 },
                 color: Colors.blue,
@@ -105,7 +106,7 @@ class _HomeState extends State<Home> {
                       } else {
                         Endereco endereco = snpashot.data;
 
-                        return Container(
+                        return endereco.logradouro != null ? Container(
                           width: MediaQuery
                               .of(context)
                               .size
@@ -200,7 +201,7 @@ class _HomeState extends State<Home> {
                               ],
                             ),
                           ),
-                        );
+                        ): Center(child: Text("CEP Inválido"),);
                       }
                       break;
                   }
